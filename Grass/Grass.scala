@@ -169,14 +169,15 @@ object Main {
 
     println()
     println( "プログラミング言語 天使ちゃんマジ天使" )
-    val angelg = new GrassParser( List("天使ちゃん"),List("マジ"),List("！") )
+    val angelg = new GrassParser( List("天使"),List("マジ"),List("！") )
 
+    println()
     println( "print w" )
-    val aprintW = "天使ちゃんマジマジ天使ちゃん天使ちゃん天使ちゃん天使ちゃん"
+    val aprintW = "天使ちゃんマジマジ天使天使ちゃん天使ちゃん天使ちゃん"
     angelg.run( aprintW )
     println()
     println( "print x" )
-    val aprintX ="天使ちゃんマジマジマジ天使ちゃん天使ちゃん天使ちゃん天使ちゃんマジマジマジ天使ちゃん"
+    val aprintX ="天使ちゃんマジマジマジ天使天使ちゃん天使ちゃん天使ちゃんマジマジマジ天使"
     angelg.run( aprintX )
     val angelhw = Source.fromPath( "./AngelHello.grass" ).mkString.replaceAll("\n", "")
 
